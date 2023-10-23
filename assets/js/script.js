@@ -1,11 +1,11 @@
-// var apiKey="43307f36c133c1b4d80feb3644b2ab3e"
+var apiKey = "dd74a5811ef11fdbfd953036c5c3f6ed"
 var titleEl = document.getElementById("title")
 var tempEl = document.getElementById("temp")
 var windEl = document.getElementById("wind")
 var humidityEl = document.getElementById("humidity")
 var searchBtn = document.getElementById("search-btn")
 var cityInput = document.getElementById("city-input")
-var fivedayForcastEl = document.getElementById("fiveday-forcast")
+var fivedayForecastEl = document.getElementById("fiveday-forecast")
 
 
 function searchCity() {
