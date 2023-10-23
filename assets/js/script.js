@@ -30,12 +30,12 @@ function displayWeather(cityName) {
     var forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + apiKey + "&units=imperial"
 
     fetch(forecastUrl)
-        .then(function (response) {
+        .then(function (response)  {
             return response.json()
         })
         .then(function (forecastData) {
             console.log(forecastData)
-            //grab every 12pm for each day for 5 days
+
             var forecastArr = forecastData.list
 
             for (let i = 3, j = 1; i < forecastArr.length; i = i + 8, j++) {
