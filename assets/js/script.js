@@ -30,7 +30,7 @@ function displayWeather(cityName) {
     var forecastUrl = "https://api.openweathermap.org/data/2.5/forecast?q=" + cityName + "&appid=" + apiKey + "&units=imperial"
 
     fetch(forecastUrl)
-        .then(function (response)  {
+        .then(function (response) {
             return response.json()
         })
         .then(function (forecastData) {
@@ -53,19 +53,4 @@ function displayWeather(cityName) {
 
 
 searchBtn.addEventListener("click", searchCity)
-
-
-// var x  = "https://api.openweathermap.org/data/2.5/forecast?q=atlanta&appid=43307f36c133c1b4d80feb3644b2ab3e&units=imperial"
-
-// var temp = document.querySelector("#temp")
-// fetch(x)
-// .then(function (response) {
-//     // console.log(response);
-//     return response.json();
-// })
-// .then(function (data) {
-//     console.log("Temp: "+data.list[0].main.temp+"F")
-//     temp.innerHTML = "Temp: "+data.list[0].main.temp+"F"
-// })
-
 
